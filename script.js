@@ -24,7 +24,7 @@ function fetchWeather(city) {
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
-            handleError({ message: 'An error occurred while fetching the weather data. Please try again later.' });
+            handleError({ message: 'Please enter a valid city name' });
         });
 }
 
